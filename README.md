@@ -100,6 +100,11 @@ Check that every tested feature works in mobile screens.
 
 Checkout the [Step  branch](https://github.com/agualis/asalto-cypress/tree/) for the final solution.     
 
+## EXERCISE 7: Final Boss
+
+As you can see, the app is buggy and it's not finished yet. 
+Can you discover some bugs and fix them?
+
 
 ## Recap
 - How many flaky tests did we have along the workshop?
