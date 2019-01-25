@@ -36,13 +36,13 @@ Check their incredible [documentation](https://www.cypress.io/).
 
 ## EXERCISE 1: Creating the first test
 
-Checkout the [Step  branch](https://github.com/agualis/asalto-cypress/tree/Exercise1) for the initial setup.     
+Checkout the [Exercise1 branch](https://github.com/agualis/asalto-cypress/tree/Exercise1) for the initial setup.     
 
 - Create a simple test that opens *google* homepage
 - Search *bilbostack* term
 - Open the first result and check that the bilbostack page has been shown
 
-Checkout the [Step  branch](https://github.com/agualis/asalto-cypress/tree/Exercise1-solved) for the solution.     
+Checkout the [Exercise1-solved branch](https://github.com/agualis/asalto-cypress/tree/Exercise1-solved) for the solution.     
 
 
 ## EXERCISE 2: Login with user and password
@@ -55,7 +55,7 @@ Checkout the [Step  branch](https://github.com/agualis/asalto-cypress/tree/Exerc
 ### Task2
 - Check that the user can logout
 
-Checkout the [Step  branch](https://github.com/agualis/asalto-cypress/tree/Exercise2-solved) for the final solution.     
+Checkout the [Exercise2-solved branch](https://github.com/agualis/asalto-cypress/tree/Exercise2-solved) for the final solution.     
 
 ## EXERCISE 3: List of artworks
 
@@ -64,7 +64,7 @@ Check that the user can open* a page with a list of artworks and count that ther
 
 *Tip: You can click the *works* option in the menu or directly visit the corresponding route
 
-Checkout the [Step  branch](https://github.com/agualis/asalto-cypress/tree/Exercise3-solved) for the final solution.     
+Checkout the [Exercise3-solved branch](https://github.com/agualis/asalto-cypress/tree/Exercise3-solved) for the final solution.     
  
 ### Task2
 Make sure that you always see the same works in every execution
@@ -84,21 +84,21 @@ Check that you can zoom-in and crop an uploaded file.
 
 *Tip: You can use simulate mouse + click events or directly use the range slider under the image to crop. 
 
-Checkout the [Step  branch](https://github.com/agualis/asalto-cypress/tree/Exercise4-solved) for the final solution.     
+Checkout the [Exercise4-solved](https://github.com/agualis/asalto-cypress/tree/Exercise4-solved) for the final solution.     
 
 ## EXERCISE 5:
 Test that a user can signin/login with her personal gmail account. 
 
 *Tip: when you aren't logged in as superadmin, you will find a 
 
-Checkout the [Step  branch](https://github.com/agualis/asalto-cypress/tree/Exercise5-solved) for the final solution.     
+Checkout the [Exercise5-solved](https://github.com/agualis/asalto-cypress/tree/Exercise5-solved) for the final solution.     
 
 ## EXERCISE 6:
 
 Check that every tested feature works in mobile screens. 
 
 
-Checkout the [Step  branch](https://github.com/agualis/asalto-cypress/tree/Exercise6-solved) for the final solution.     
+Checkout the [Exercise6-solved](https://github.com/agualis/asalto-cypress/tree/Exercise6-solved) for the final solution.     
 
 ## EXERCISE 7: Final Boss
 
