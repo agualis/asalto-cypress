@@ -16,9 +16,4 @@ context('As a citizen', () => {
     // Huele a canela, pero es veneno...🙊
     assertListHasThreeElements()
   })
-
-  it('I can see the list of nearest artworks after a seed', () => {
-    cy.request('reset-db-hook')
-    getByDataTestId('list-item').should('have.length', 3)
-  })
 })

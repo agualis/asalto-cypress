@@ -2,10 +2,6 @@
 
 import { SUPERADMIN_PASSWORD, SUPERADMIN_USER } from '../../../common/globals'
 import { getByDataTestId, urlIs } from '../../../common/helpers'
-import firebase from 'firebase'
-import firebaseApp from 'firebase/app'
-import { config } from '../../../../../asalto/src/plugins/firebase'
-import { programmaticLogin } from '../../../common/login'
 
 const assertSuperadminLoggedIn = () => {
     const OBEY_IMG_SRC = 'img/obey-face.jpg'
@@ -39,19 +35,5 @@ context('As superadmin', () => {
     getByDataTestId('superlogin-submit').click()
     urlIs('http://localhost:8080/#/')
     assertSuperadminLoggedIn()
-  })
-
-  it('I can login programmatically', () => {
-    firebaseApp.initializeApp(config)
-    firebase.auth().signInWithEmailAndPassword(SUPERADMIN_USER, SUPERADMIN_PASSWORD)
-    cy.visit('/')
-    assertSuperadminLoggedIn()
-  })
-
-  it('I can logout', () => {
-    cy.loginWithSuperAdminUser()
-    cy.visit('/')
-    getByDataTestId('logout').click()
-    assertSuperadminLoggedOut()
   })
 })
