@@ -27,12 +27,6 @@ context('As superadmin', () => {
       `Se trata de una pedazo de obra en acuarela.${ENTER}¿Cómo te quedas?`)
   })
 
-  it('I can open my geolocation in google maps', () => {
-    getByDataTestId('open-gmaps-geolocation').click()
-    assertWindowOpened()
-  })
-  const assertWindowOpened = () => cy.get(WINDOW_OPEN).should('be.called')
-
   it('I can upload a file', () => {
 
     const fileName = "../fixtures/obey.png"
@@ -46,16 +40,5 @@ context('As superadmin', () => {
     changeFirstRangeInput(1.2)
 
     clickButton('crop-preview')
-
-    // cy.get(".cr-overlay")
-    //   .trigger('mousedown', { which: 1, position: 'center' })
-    //   .trigger('mousemove', { clientX: 50, clientY: 50 })
-    //   .trigger('mouseup', {force: true})
-
-    // cy.get(".drag-handle")
-    // .trigger("mousedown", { which: 1 })
-    // .trigger("mousemove")
-    // .trigger("mouseup")
-
   })
 })
