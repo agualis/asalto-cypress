@@ -13,10 +13,14 @@ export const login = () => {
 }
 
 export const programmaticLogin = () => {
+  if (firebase.apps.length) return
   firebaseApp.initializeApp(config)
     firebase.auth().signInWithEmailAndPassword(SUPERADMIN_USER, SUPERADMIN_PASSWORD).then((user) => {
-      console.log('estamos tan agustito')
     })
+}
+
+export const programmaticLogout = () => {
+  firebaseApp.auth().signOut()
 }
 
 const enterUser = (user) => {

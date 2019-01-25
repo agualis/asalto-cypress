@@ -1,8 +1,12 @@
-import { programmaticLogin } from '../common/login'
+import { programmaticLogin, programmaticLogout } from '../common/login'
 
 
-Cypress.Commands.add('loginWithSuperAdminUser', async () => {
-  await programmaticLogin()
+Cypress.Commands.add('loginWithSuperAdminUser', () => {
+  programmaticLogin()
+})
+
+Cypress.Commands.add('logout',() => {
+  programmaticLogout()
 })
 
 Cypress.Commands.add('uploadFile', (fileName, selector) => {

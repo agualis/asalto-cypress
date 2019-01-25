@@ -3,10 +3,15 @@
 import { changeFirstRangeInput, clickButton, dataTestSelector, ENTER, fillInput, fillTextArea, getByDataTestId, getFirstRangeInput, isVisible } from '../../../common/helpers'
 
 context('As superadmin', () => {
+
+  before(() => {
+    cy.loginWithSuperAdminUser()
+  })
+
   const WINDOW_OPEN_ALIAS = 'windowOpen'
   const WINDOW_OPEN = '@windowOpen'
   beforeEach(() => {
-     cy.visit('/create-artwork', {
+    cy.visit('/create-artwork', {
       onBeforeLoad(win) {
         cy.stub(win, 'open').as(WINDOW_OPEN_ALIAS)
       }
@@ -22,17 +27,14 @@ context('As superadmin', () => {
       `Se trata de una pedazo de obra en acuarela.${ENTER}¿Cómo te quedas?`)
   })
 
-  it('I can see my geolocation automatically filled', () => {
-      getByDataTestId('new-artwork-coordinates').eq(0).should('contain', '41')
-  })
-
   it('I can open my geolocation in google maps', () => {
     getByDataTestId('open-gmaps-geolocation').click()
     assertWindowOpened()
   })
-  const assertWindowOpened = ()=> cy.get(WINDOW_OPEN).should('be.called')
+  const assertWindowOpened = () => cy.get(WINDOW_OPEN).should('be.called')
 
-  it.only('I can upload a file', () => {
+  it('I can upload a file', () => {
+
     const fileName = "../fixtures/obey.png"
     cy.uploadFile(fileName, dataTestSelector('upload-file'))
 

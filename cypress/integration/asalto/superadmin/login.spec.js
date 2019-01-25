@@ -48,7 +48,7 @@ context('As superadmin', () => {
     assertSuperadminLoggedIn()
   })
 
-  it.only('I can logout', () => {
+  it('I can logout', () => {
     cy.loginWithSuperAdminUser()
     cy.visit('/')
     getByDataTestId('logout').click()
