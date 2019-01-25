@@ -47,53 +47,53 @@ Checkout the [Step  branch](https://github.com/agualis/asalto-cypress/tree/) for
 
 ## EXERCISE 2: Login with user and password
 
-###Task1
+### Task1
 - Go to */superlogin* page
 - Fill user/password (superadmin@gmail.com/patata)
 - Check that the superadmin user is logged in
 
-###Task2
+### Task2
 - Check that the user can logout
 
 Checkout the [Step  branch](https://github.com/agualis/asalto-cypress/tree/) for the final solution.     
 
 ## EXERCISE 3: List of artworks
 
-###Task1
+### Task1
 Check that the user can open* a page with a list of artworks and count that there are 3
 
 *Tip: You can click the *works* option in the menu or directly visit the corresponding route
 
 Checkout the [Step  branch](https://github.com/agualis/asalto-cypress/tree/) for the final solution.     
  
-###Task2
+### Task2
 Make sure that you always see the same works in every execution
 
 *Tip: if you login as superadmin you have a secret page (/reset-db) to reset the DB --> Deterministic seed FTW 
 
-##EXERCISE 4: Create a new artwork
+## EXERCISE 4: Create a new artwork
 
-###Task1 
+### Task1 
 Test that you can create a new work by uploading an image with default crop.
 
 *Tip1: Cypress does not support native file uploads so you will need to use some black magic. 
 *Tip2: Check the commands that we prepared for you.
 
-###Task2
+### Task2
 Check that you can zoom-in and crop an uploaded file. 
 
 *Tip: You can use simulate mouse + click events or directly use the range slider under the image to crop. 
 
 Checkout the [Step  branch](https://github.com/agualis/asalto-cypress/tree/) for the final solution.     
 
-##EXERCISE 5:
+## EXERCISE 5:
 Test that a user can signin/login with her personal gmail account. 
 
 *Tip: when you aren't logged in as superadmin, you will find a 
 
 Checkout the [Step  branch](https://github.com/agualis/asalto-cypress/tree/) for the final solution.     
 
-##EXERCISE 6:
+## EXERCISE 6:
 
 Check that every tested feature works in mobile screens. 
 
