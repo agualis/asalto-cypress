@@ -1,6 +1,9 @@
 /// <reference types="Cypress" />
 import { getByDataTestId } from '../../../common/helpers'
 
+const assertListHasThreeElements = () => getByDataTestId('list-item').should('have.length', 3)
+
+
 context('As a citizen', () => {
 
   before(()=> cy.loginWithSuperAdminUser())
@@ -10,7 +13,8 @@ context('As a citizen', () => {
   })
 
   it('I can see the list of nearest artworks', () => {
-    getByDataTestId('list-item').should('have.length', 3)
+    // Huele a canela, pero es veneno...🙊
+    assertListHasThreeElements()
   })
 
   it('I can see the list of nearest artworks after a seed', () => {

@@ -20,7 +20,7 @@ context('As an anonymous citizen browsing the map', () => {
     cy.visit('/')
   })
 
-  it('I can zoom-in and open a work detail', () => {
+  xit('I can zoom-in and open a work detail', () => {
     waitUntilMapIsLoaded()
     zoomInToRemoveClusters()
     openFirstWorkDetail()
