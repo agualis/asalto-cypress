@@ -36,7 +36,7 @@ Check their incredible [documentation](https://www.cypress.io/).
 
 ## EXERCISE 1: Creating the first test
 
-Checkout the [Step  branch](https://github.com/agualis/asalto-cypress/tree/) for the initial setup.     
+Checkout the [Exercise1  branch](https://github.com/agualis/asalto-cypress/tree/) for the initial setup.     
 
 - Create a simple test that opens *google* homepage
 - Search *bilbostack* term
