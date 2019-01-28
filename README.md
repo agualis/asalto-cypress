@@ -120,6 +120,6 @@ Can you discover some bugs and fix them?
 - Don't use brittle selectors but, be pragmatic if you need it
 - Create commands to save time with repetitive/complex tasks (login, upload file, reset state...)
 - Prepare your db seed to make the tests deterministic
-- You can use cypress to test your User Storie's *DODs* in *ATDD* mode and/or to cover *legacy* code or 
+- You can use cypress to test your User Storie's *DODs* in *ATDD* mode and/or to cover *legacy* code 
 - Don't use Selenium never again :P
 - Share what you learnt with the community ;)
